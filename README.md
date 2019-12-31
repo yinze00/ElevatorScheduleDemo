@@ -3,8 +3,8 @@
 ## 汪俊威 3170105970
 > 浙江大学《计算机与问题求解》的课程project
 
-# 1. 使用说明
-> If you are avialibale to the Net. I strongly recommend you to visit https://github.com/yinze00/ElevatorScheduleDemo
+# 1. 使用说明 
+> If you are **avialibale to the Net**. I strongly recommend you to visit **[repo on GitHub](https://github.com/yinze00/ElevatorScheduleDemo)** 
 
 ## 1.1 项目简介
 
@@ -12,9 +12,9 @@
 
 ## 1.2 项目目的
 
-1.2.1 学习调度算法
+* 学习调度算法
 
-1.2.2 通过实现电梯调度，体会操作系统调度过程
+*  通过实现电梯调度，体会操作系统调度过程
 
 ## 1.3 项目功能要求
 
@@ -40,7 +40,9 @@
 
 每部电梯中都设有1-20的数字键，点击数字键，电梯到达指定楼层。如图操作：
 
-![数字键示例](assets/数字键示例.png)
+<div  align="center">    
+<img src = "Designreport/assets/数字键示例.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
 
 ### 1.4.2 上下行健
 
@@ -48,8 +50,9 @@
 
 每个楼层设有上行和下行键，点击上下行健，所有电梯都会接收到请求，调度算法进行调度，安排电梯到达该楼层，如图操作：
 
-![上下行健示例](Design report/assets/上下行健示例.png)
-
+<div  align="center">    
+<img src = "Designreport/assets/上下行健示例.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
 
 
 # 2. 程序设计与实现
@@ -203,11 +206,15 @@ class myWindow(QtWidgets.QMainWindow):
 
 ### 2.2.1 监听上下行按钮【以上行为例】
 
-![监听上行按钮](Designreport/assets/监听上行按钮.png)
+<div  align="center">    
+<img src = "Designreport/assets/监听上行按钮.png" width = "600" height = "800" alt = "数字键示例" align = center/>
+</div>
 
 ### 2.2.2 监听数字按钮
 
-![监听数字按钮](Designreport/assets/监听数字按钮.png)
+<div  align="center">    
+<img src = "Designreport/assets/监听数字按钮.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
 
 ### 2.2.3 执行完上下行动作恢复静止后，处理执行动作时产生的但未处理的请求【以上行为例】
 
@@ -262,9 +269,12 @@ class myWindow(QtWidgets.QMainWindow):
 
 **测试结果：** 电梯1响应，符合预期
 
-![上行测试](Designreport/assets/上行测试.png)
-
-![上行测试2](Designreport/assets/上行测试2.png)
+<div  align="center">    
+<img src = "Designreport/assets/上行测试.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
+<div  align="center">    
+<img src = "Designreport/assets/上行测试2.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
 
 ### 下行：
 
@@ -274,11 +284,14 @@ class myWindow(QtWidgets.QMainWindow):
 
 **测试结果：** 电梯4响应，符合预期
 
-![下行测试](Design report/assets/下行测试.png)
+<div  align="center">    
+<img src = "Designreport/assets/下行测试.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
 
 
-
-![下行测试2](Design report/assets/下行测试2.png)
+<div  align="center">    
+<img src = "Designreport/assets/下行测试2.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
 
 ### 数字键
 
@@ -288,7 +301,9 @@ class myWindow(QtWidgets.QMainWindow):
 
 **测试结果：** 电梯正确响应，符合预期
 
-![数字键测试](Design report/assets/数字键测试.png)
-
-![数字键测试2](Design report/assets/数字键测试2.png)
-
+<div  align="center">    
+<img src = "Designreport/assets/数字键测试.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
+<div  align="center">    
+<img src = "Designreport/assets/数字键测试2.png" width = "600" height = "500" alt = "数字键示例" align = center/>
+</div>
