@@ -6,6 +6,8 @@
 # 1. 使用说明 
 > If you are **avialibale to the Net**. I strongly recommend you to visit **[repo on GitHub](https://github.com/yinze00/ElevatorScheduleDemo)** 
 
+> 本项目部分代码参考已有的开源软件，来源不可考
+
 ## 1.1 项目简介
 
 > 这次实验有点难度，而且再考试周前夕，请老师和助教手下留情:
@@ -307,3 +309,10 @@ class myWindow(QtWidgets.QMainWindow):
 <div  align="center">    
 <img src = "Designreport/assets/数字键测试2.png" width = "600" height = "500" alt = "数字键示例" align = center/>
 </div>
+
+## 3.2 各种算法运行效果比较
+
+| FCFS | SSTF | SCAN(LOOK) |
+| :----| :----| :---- |
+| 在重载荷的情况下，最短寻找楼层时间优先算法的平均响应时间较短，但响应时间的方差较大 考虑到了电梯运行过程中乘客上梯时间的影响 | 在重载荷的情况下，最短寻找楼层时间优先算法的平均响应时间较短，但响应时间的方差较大，原因是队列中的某些请求可能长时间得不到响应，出现所谓的“饿死”现象。|进行寻找楼层的优化，效率比较高的一个非实时算法。扫描算法较好地解决了电梯移动的问题，在这个算法中，每个电梯响应乘客请求使乘客获得服务的次序是由其发出请求的乘客的位置与当前电梯位置之间的距离来决定的。所有的与电梯运行方向相同的乘客的请求在一次电向上运行或向下运行的过程中完成，免去了电梯频繁的来回移动。|
+
